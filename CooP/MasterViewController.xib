@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="10116"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="MasterViewController" customModule="CooP" customModuleProvider="target">
+            <connections>
+                <outlet property="ServerImageView" destination="Avn-sO-0YP" id="c8H-ia-Sgy"/>
+                <outlet property="ServerStartBtn" destination="J9H-np-Jxb" id="Dge-Fc-cZy"/>
+                <outlet property="ServerStopBtn" destination="74a-ZB-aD0" id="tqr-ig-oSj"/>
+                <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="Hz6-mo-xeY">
+            <rect key="frame" x="0.0" y="0.0" width="705" height="427"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <tabView translatesAutoresizingMaskIntoConstraints="NO" id="Vjm-cj-99W">
+                    <rect key="frame" x="-7" y="-10" width="719" height="443"/>
+                    <font key="font" metaFont="system"/>
+                    <tabViewItems>
+                        <tabViewItem label="Client" identifier="1" id="Dyk-BT-HIg">
+                            <view key="view" id="tyG-3C-7DX">
+                                <rect key="frame" x="10" y="33" width="699" height="397"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </view>
+                        </tabViewItem>
+                        <tabViewItem label="Server" identifier="2" id="rYn-0L-zLi">
+                            <view key="view" id="xAe-iw-iDt">
+                                <rect key="frame" x="10" y="33" width="699" height="397"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <subviews>
+                                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="J9H-np-Jxb">
+                                        <rect key="frame" x="263" y="366" width="70" height="32"/>
+                                        <buttonCell key="cell" type="push" title="Start" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="XkA-sW-AR3">
+                                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                            <font key="font" metaFont="system"/>
+                                        </buttonCell>
+                                        <connections>
+                                            <action selector="ServerStart:" target="-2" id="agv-LG-AMf"/>
+                                        </connections>
+                                    </button>
+                                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="74a-ZB-aD0">
+                                        <rect key="frame" x="349" y="366" width="69" height="32"/>
+                                        <buttonCell key="cell" type="push" title="Stop" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="w59-xe-QIR">
+                                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                            <font key="font" metaFont="system"/>
+                                        </buttonCell>
+                                        <connections>
+                                            <action selector="ServerStop:" target="-2" id="o1c-ZH-pBw"/>
+                                        </connections>
+                                    </button>
+                                    <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Avn-sO-0YP">
+                                        <rect key="frame" x="17" y="17" width="665" height="336"/>
+                                        <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" id="vWD-KN-qhx"/>
+                                    </imageView>
+                                </subviews>
+                            </view>
+                        </tabViewItem>
+                    </tabViewItems>
+                </tabView>
+            </subviews>
+            <constraints>
+                <constraint firstItem="Vjm-cj-99W" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" id="5Ft-yM-Pku"/>
+                <constraint firstItem="Vjm-cj-99W" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" id="87X-Wm-ItK"/>
+                <constraint firstAttribute="trailing" secondItem="Vjm-cj-99W" secondAttribute="trailing" id="X0n-AI-dlu"/>
+                <constraint firstAttribute="bottom" secondItem="Vjm-cj-99W" secondAttribute="bottom" id="hcc-ng-Lef"/>
+            </constraints>
+            <point key="canvasLocation" x="497.5" y="544.5"/>
+        </customView>
+    </objects>
+</document>
