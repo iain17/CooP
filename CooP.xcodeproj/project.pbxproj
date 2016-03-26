@@ -13,6 +13,8 @@
 		2702E38E1CA6D5B10003350D /* ScreenRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2702E38D1CA6D5B10003350D /* ScreenRecorder.swift */; };
 		279C34631CA6DC3A00F0E38F /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279C34611CA6DC3A00F0E38F /* MasterViewController.swift */; };
 		279C34641CA6DC3A00F0E38F /* MasterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 279C34621CA6DC3A00F0E38F /* MasterViewController.xib */; };
+		27DF33951CA6EA6A004D5ACF /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 27DF33941CA6EA6A004D5ACF /* .gitignore */; };
+		27DF33971CA6EA88004D5ACF /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 27DF33961CA6EA88004D5ACF /* LICENSE */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		2702E38D1CA6D5B10003350D /* ScreenRecorder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScreenRecorder.swift; sourceTree = "<group>"; };
 		279C34611CA6DC3A00F0E38F /* MasterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
 		279C34621CA6DC3A00F0E38F /* MasterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MasterViewController.xib; sourceTree = "<group>"; };
+		27DF33941CA6EA6A004D5ACF /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		27DF33961CA6EA88004D5ACF /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +44,8 @@
 		2702E3731CA6D56C0003350D = {
 			isa = PBXGroup;
 			children = (
+				27DF33961CA6EA88004D5ACF /* LICENSE */,
+				27DF33941CA6EA6A004D5ACF /* .gitignore */,
 				2702E37E1CA6D56C0003350D /* CooP */,
 				2702E37D1CA6D56C0003350D /* Products */,
 			);
@@ -141,9 +147,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				27DF33951CA6EA6A004D5ACF /* .gitignore in Resources */,
 				2702E3821CA6D56C0003350D /* Assets.xcassets in Resources */,
 				2702E3851CA6D56C0003350D /* MainMenu.xib in Resources */,
 				279C34641CA6DC3A00F0E38F /* MasterViewController.xib in Resources */,
+				27DF33971CA6EA88004D5ACF /* LICENSE in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
