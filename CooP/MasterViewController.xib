@@ -7,6 +7,9 @@
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="MasterViewController" customModule="CooP" customModuleProvider="target">
             <connections>
+                <outlet property="ClientImageView" destination="LBE-X4-ysS" id="lkK-qC-CMH"/>
+                <outlet property="ClientStartBtn" destination="7JS-Iy-FO3" id="qVq-pI-MqO"/>
+                <outlet property="ClientStopBtn" destination="bOD-VF-PKN" id="PH6-V6-9CP"/>
                 <outlet property="ServerImageView" destination="Avn-sO-0YP" id="c8H-ia-Sgy"/>
                 <outlet property="ServerStartBtn" destination="J9H-np-Jxb" id="Dge-Fc-cZy"/>
                 <outlet property="ServerStopBtn" destination="74a-ZB-aD0" id="tqr-ig-oSj"/>
@@ -27,6 +30,32 @@
                             <view key="view" id="tyG-3C-7DX">
                                 <rect key="frame" x="10" y="33" width="699" height="397"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <subviews>
+                                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7JS-Iy-FO3">
+                                        <rect key="frame" x="255" y="366" width="70" height="32"/>
+                                        <buttonCell key="cell" type="push" title="Start" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="AVu-27-AxZ">
+                                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                            <font key="font" metaFont="system"/>
+                                        </buttonCell>
+                                        <connections>
+                                            <action selector="ClientStart:" target="-2" id="Uxk-Sa-WEm"/>
+                                        </connections>
+                                    </button>
+                                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bOD-VF-PKN">
+                                        <rect key="frame" x="374" y="366" width="69" height="32"/>
+                                        <buttonCell key="cell" type="push" title="Stop" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="ZVq-KL-S0y">
+                                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                            <font key="font" metaFont="system"/>
+                                        </buttonCell>
+                                        <connections>
+                                            <action selector="ClientStop:" target="-2" id="rYo-DD-2cQ"/>
+                                        </connections>
+                                    </button>
+                                    <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LBE-X4-ysS">
+                                        <rect key="frame" x="17" y="17" width="665" height="350"/>
+                                        <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" id="bbu-87-hfO"/>
+                                    </imageView>
+                                </subviews>
                             </view>
                         </tabViewItem>
                         <tabViewItem label="Server" identifier="2" id="rYn-0L-zLi">

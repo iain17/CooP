@@ -17,10 +17,10 @@ public class ScreenRecorder: NSObject, AVCaptureVideoDataOutputSampleBufferDeleg
     var input: AVCaptureScreenInput!
     var output: AVCaptureVideoDataOutput!
     var imageOutput: AVCaptureStillImageOutput!
-    var callback: (NSImage) -> Void!
+    var callback: (NSData) -> Void!
     
     
-    public init(callback : (NSImage) -> Void) {
+    public init(callback : (NSData) -> Void) {
         self.callback = callback;
         super.init()
         
@@ -107,11 +107,11 @@ public class ScreenRecorder: NSObject, AVCaptureVideoDataOutputSampleBufferDeleg
         //////
         ////
         ////
-        let compressedImage: NSImage = NSImage(data: compressedData)!
+        //let compressedImage: NSImage = NSImage(data: compressedData)!
         //        print(compressedImage.size.height)
         //        print(compressedImage.size.width)
         //        print(compressedData.length)
-        callback(compressedImage);
+        callback(compressedData);
         
     }
     
